@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SJ Darts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
   <style>
     body {
-      font-family: 'Tahoma', Tahoma;
-      background-color: #000000;
-      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      height: 100vh;
-      margin: 0;
-      padding: 0 20px;
+      align-items: center;
+      background: #000000;
+      font-family: Arial, sans-serif;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .logo {
-      max-width: 300px;
-      margin-bottom: 1rem;
-    }
-    .motto {
-      font-style: italic;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-    }
-    .description {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin-bottom: 2rem;
+
+    img {
+      max-width: 90%;
+      height: auto;
     }
     .coming-soon {
       font-size: 2.5rem;
@@ -44,25 +36,35 @@
       color: white;
       display: inline-block;
     }
-  </style>
+    .email-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0073e6;
+      color: #fff;
+      border: none;
+      padding: 15px 25px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
 
+    .email-btn:hover {
+      background: #005bb5;
+    }
+  </style>
 </head>
-  
 <body>
-  <br><br>
-  <img src="SJ Darts flyer.png" alt="SJ Darts Coaching Flyer" style="width:500px;height:600px;" />
-  <div class="coming-soon"> <a href="mailto:contact@sjdarts.com?subject=Website Enquiry">Send email</a></div>
-  <div class="coming-soon"> Full Website Coming Soon</div>
+  <div class="container">
+    <img src="SJ Darts flyer.png" alt="SJ DARTS coaching Flyer">
+  </div>
+
+  <a href="mailto:contact@sjdarts.com" class="email-btn">Email Me</a>
+
+  <div class="coming-soon"> Full website coming soon</div>
   <img src="SJD White.jpg" alt="SJ Darts Logo" class="logo" style="width:100px;height:100px;" />
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
